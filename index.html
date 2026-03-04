@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Echo Compression Theory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap');
+        
+        :root {
+            --ancient-gold: #d4af77;
+        }
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), url('https://picsum.photos/id/1015/2000/1200');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .timeline-dot {
+            width: 18px;
+            height: 18px;
+            background: #d4af77;
+            border: 4px solid #451a03;
+        }
+
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: linear-gradient(to right, #d4af77, #8d5524);
+            z-index: 50;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <!-- Progress Bar -->
+    <div id="progress-bar" class="scroll-progress w-0"></div>
+
+    <!-- Navbar -->
+    <nav class="bg-amber-950 text-amber-100 py-5 sticky top-0 z-40 shadow-md">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-hourglass-half text-3xl text-amber-400"></i>
+                <span class="text-2xl font-bold tracking-wider heading-font">ECHO COMPRESSION</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="#core" class="hover:text-amber-300 transition">The Theory</a>
+                <a href="#evolution" class="hover:text-amber-300 transition">Unit Evolution</a>
+                <a href="#texts" class="hover:text-amber-300 transition">Textual Evidence</a>
+                <a href="#geo" class="hover:text-amber-300 transition">Geological &amp; Archaeological Fit</a>
+                <a href="#timeline" class="hover:text-amber-300 transition">Compressed Timeline</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero-bg h-screen flex items-center text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-6 py-2 rounded-full mb-8">
+                <span class="text-xs tracking-[3px] uppercase font-medium">A New Lens on Ancient Time</span>
+            </div>
+            <h1 class="heading-font text-7xl md:text-8xl font-bold leading-none mb-6">
+                ECHO<br>COMPRESSION<br>THEORY
+            </h1>
+            <p class="max-w-xl mx-auto text-2xl text-amber-100 leading-tight">
+                Turning 900-year patriarchs and 28,000-year kings into real human elders —<br>
+                by simply understanding how ancient people counted time.
+            </p>
+            <div class="mt-12 flex justify-center">
+                <a href="#core" 
+                   class="inline-flex items-center gap-3 bg-amber-700 hover:bg-amber-600 transition px-10 py-6 rounded-2xl text-lg font-medium">
+                    Explore the Theory
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Core Idea -->
+    <section id="core" class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-16 items-center">
+                <div class="md:col-span-7">
+                    <span class="uppercase tracking-widest text-amber-600 text-sm font-medium">The Big Idea</span>
+                    <h2 class="heading-font text-5xl font-bold mt-3 mb-8 leading-none">
+                        Ancient time wasn’t measured like ours.<br>
+                        When we restore the original units, the myths become history.
+                    </h2>
+                    <div class="prose prose-lg text-stone-600">
+                        <p>The Echo Compression Theory proposes that early Near Eastern storytellers used short, practical time units — daily cycles, workdays, lunar months, or simple seasonal “repetitions” — to record the lives and reigns of legendary figures.</p>
+                        <p>Later scribes, working in empires with standardized solar calendars, reinterpreted those numbers as full 365-day years. The result? Mythic inflation that turned respected elders into 900-year-old giants.</p>
+                        <p>By restoring the original short units, the entire early timeline compresses into a few realistic centuries — aligning perfectly with real archaeological events in the Late Bronze Age.</p>
+                    </div>
+                </div>
+                <div class="md:col-span-5">
+                    <div class="bg-stone-100 p-8 rounded-3xl shadow-xl">
+                        <div class="text-center mb-6">
+                            <div class="inline-flex items-center justify-center w-20 h-20 bg-amber-100 text-amber-700 rounded-2xl text-5xl mb-4">⏳</div>
+                            <p class="font-medium text-stone-500">Before → After</p>
+                        </div>
+                        <div class="space-y-8">
+                            <div class="flex gap-6 items-center">
+                                <div class="flex-1 text-right">
+                                    <div class="text-4xl font-bold text-red-700">969 years</div>
+                                    <div class="text-sm text-stone-500">Methuselah (literal reading)</div>
+                                </div>
+                                <div class="text-amber-400 text-3xl">→</div>
+                                <div class="flex-1">
+                                    <div class="text-4xl font-bold text-emerald-700">~81 years</div>
+                                    <div class="text-sm text-stone-500">Restored short-cycle reading</div>
+                                </div>
+                            </div>
+                            <div class="flex gap-6 items-center">
+                                <div class="flex-1 text-right">
+                                    <div class="text-4xl font-bold text-red-700">28,800 “years”</div>
+                                    <div class="text-sm text-stone-500">Alulim (Sumerian King List)</div>
+                                </div>
+                                <div class="text-amber-400 text-3xl">→</div>
+                                <div class="flex-1">
+                                    <div class="text-4xl font-bold text-emerald-700">~79 years</div>
+                                    <div class="text-sm text-stone-500">As workdays / short cycles</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evolution of Time Units -->
+    <section id="evolution" class="py-24 bg-stone-900 text-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-amber-400 text-sm tracking-widest">STEP-BY-STEP CONTINUITY</span>
+                <h2 class="heading-font text-5xl font-bold mt-3">How Time Units Evolved</h2>
+            </div>
+
+            <div class="space-y-16">
+                <!-- Step 1 -->
+                <div class="grid md:grid-cols-12 gap-10 items-center">
+                    <div class="md:col-span-5">
+                        <div class="bg-stone-800 p-8 rounded-3xl">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="timeline-dot rounded-full flex-shrink-0"></div>
+                                <div>
+                                    <div class="font-semibold text-amber-400">Stage 1 • Hunter-Gatherers</div>
+                                    <div class="text-3xl font-bold">Daily Cycles</div>
+                                </div>
+                            </div>
+                            <p class="text-stone-400">Time was counted in sunrises, workdays, or “how many sleeps.” Practical labor tallies in small bands. Lifespans felt in seasons lived, not abstract years.</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-7 text-stone-300">
+                        <p class="text-lg">Early humans had no need for 365-day calendars. A “cycle” (the root meaning of shanah and similar words) simply meant noticeable repetition — day after day, moon after moon.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="grid md:grid-cols-12 gap-10 items-center">
+                    <div class="md:col-span-5 order-2 md:order-1 text-stone-300">
+                        <p class="text-lg">Farming villages began tracking lunar months and wet/dry seasons for planting. Oral stories used these short cycles to remember elders.</p>
+                    </div>
+                    <div class="md:col-span-7 order-1 md:order-2">
+                        <div class="bg-stone-800 p-8 rounded-3xl">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="timeline-dot rounded-full flex-shrink-0"></div>
+                                <div>
+                                    <div class="font-semibold text-amber-400">Stage 2 • Early Farmers</div>
+                                    <div class="text-3xl font-bold">Lunar Months &amp; Seasons</div>
+                                </div>
+                            </div>
+                            <p class="text-stone-400">“Shanah” still meant repeating change — moon cycles (~30 days) or seasonal rounds. Numbers stayed manageable and human-scale.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="grid md:grid-cols-12 gap-10 items-center">
+                    <div class="md:col-span-5">
+                        <div class="bg-stone-800 p-8 rounded-3xl">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="timeline-dot rounded-full flex-shrink-0"></div>
+                                <div>
+                                    <div class="font-semibold text-amber-400">Stage 3 • Empires &amp; Scribes</div>
+                                    <div class="text-3xl font-bold">Solar Standardization</div>
+                                </div>
+                            </div>
+                            <p class="text-stone-400">Babylonian and later Persian scribes fixed calendars to 365-day solar years for administration. Older oral numbers were copied literally — creating the mythic inflation we inherited.</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-7 text-stone-300">
+                        <p class="text-lg">The same numbers that once meant “80 moons lived” became “80 years.” Prestige and base-60 mathematics made the big figures feel sacred rather than mistaken.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Textual Evidence -->
+    <section id="texts" class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="heading-font text-5xl font-bold text-center mb-16">Textual Evidence</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Sumerian King List -->
+                <div>
+                    <h3 class="font-medium text-xl mb-6 flex items-center gap-3">
+                        <span class="text-2xl">📜</span>
+                        Sumerian King List (c. 2100–1800 BCE)
+                    </h3>
+                    <div class="bg-amber-50 p-8 rounded-3xl">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="border-b border-amber-200">
+                                    <th class="py-4 text-left font-normal text-stone-500">King</th>
+                                    <th class="py-4 text-right font-normal text-stone-500">Literal “Years”</th>
+                                    <th class="py-4 text-right font-normal text-emerald-600">Compressed (Days)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y">
+                                <tr><td class="py-4">Alulim</td><td class="text-right">28,800</td><td class="text-right font-medium text-emerald-700">~79 years</td></tr>
+                                <tr><td class="py-4">Alalgar</td><td class="text-right">36,000</td><td class="text-right font-medium text-emerald-700">~99 years</td></tr>
+                                <tr><td class="py-4">En-men-lu-ana</td><td class="text-right">43,200</td><td class="text-right font-medium text-emerald-700">~118 years</td></tr>
+                                <tr><td class="py-4">Ubara-Tutu</td><td class="text-right">18,600</td><td class="text-right font-medium text-emerald-700">~51 years</td></tr>
+                            </tbody>
+                        </table>
+                        <p class="text-xs text-stone-500 mt-6">Total pre-flood dynasty compresses to ~670 years — realistic for legendary elders.</p>
+                    </div>
+                </div>
+
+                <!-- Genesis Patriarchs -->
+                <div>
+                    <h3 class="font-medium text-xl mb-6 flex items-center gap-3">
+                        <span class="text-2xl">📖</span>
+                        Genesis Patriarchs
+                    </h3>
+                    <div class="bg-amber-50 p-8 rounded-3xl">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="border-b border-amber-200">
+                                    <th class="py-4 text-left font-normal text-stone-500">Figure</th>
+                                    <th class="py-4 text-right font-normal text-stone-500">Literal Age</th>
+                                    <th class="py-4 text-right font-normal text-emerald-600">Compressed (Short Cycles)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y">
+                                <tr><td class="py-4">Methuselah</td><td class="text-right">969</td><td class="text-right font-medium text-emerald-700">~81 years</td></tr>
+                                <tr><td class="py-4">Noah at Flood</td><td class="text-right">600</td><td class="text-right font-medium text-emerald-700">~50 years</td></tr>
+                                <tr><td class="py-4">Adam</td><td class="text-right">930</td><td class="text-right font-medium text-emerald-700">~78 years</td></tr>
+                            </tbody>
+                        </table>
+                        <p class="text-xs text-stone-500 mt-6">Flood-to-Abraham collapses from 350 years to ~25–50 years with generational overlap.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center text-stone-500 text-sm max-w-md mx-auto">
+                Parallel flood accounts (Gilgamesh, Atrahasis) show the same pattern: one survivor, boat, birds, sacrifice — but told in a shared cultural memory pool, not literal global history.
+            </div>
+        </div>
+    </section>
+
+    <!-- Geological & Archaeological Correlations -->
+    <section id="geo" class="py-24 bg-amber-950 text-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="heading-font text-5xl font-bold text-center mb-4">Geological &amp; Archaeological Correlations</h2>
+            <p class="text-center text-amber-300 max-w-xl mx-auto mb-16">The compressed timeline fits real-world evidence far better than the traditional stretched chronology.</p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Flood -->
+                <div class="bg-stone-900 p-8 rounded-3xl">
+                    <div class="text-amber-400 mb-6">
+                        <i class="fa-solid fa-water text-4xl"></i>
+                    </div>
+                    <h3 class="font-medium text-2xl mb-4">The Flood Memory</h3>
+                    <ul class="space-y-6 text-sm">
+                        <li class="flex gap-4">
+                            <span class="font-mono text-amber-500">~2900 BCE</span>
+                            <span>Thick silt layers at Shuruppak, Kish &amp; Ur — major river flood deposits exactly where Sumerian flood stories originated.</span>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="font-mono text-amber-500">Compressed view</span>
+                            <span>The story preserves a devastating local Mesopotamian flood remembered by survivors and carried forward in oral tradition.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Collapse -->
+                <div class="bg-stone-900 p-8 rounded-3xl">
+                    <div class="text-amber-400 mb-6">
+                        <i class="fa-solid fa-mountain-city text-4xl"></i>
+                    </div>
+                    <h3 class="font-medium text-2xl mb-4">Late Bronze Age Collapse</h3>
+                    <ul class="space-y-6 text-sm">
+                        <li class="flex gap-4">
+                            <span class="font-mono text-amber-500">~1250–1150 BCE</span>
+                            <span>Drought proven by pollen cores, lake levels &amp; tree rings across the region. Sea Peoples invasions recorded by Ramses III.</span>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="font-mono text-amber-500">Compressed view</span>
+                            <span>Perfect window for Israelite settlement: cities weakened, highlands open, Merneptah Stele (1207 BCE) already mentions “Israel”.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Settlement -->
+                <div class="bg-stone-900 p-8 rounded-3xl">
+                    <div class="text-amber-400 mb-6">
+                        <i class="fa-solid fa-house text-4xl"></i>
+                    </div>
+                    <h3 class="font-medium text-2xl mb-4">Highland Village Boom</h3>
+                    <ul class="space-y-6 text-sm">
+                        <li class="flex gap-4">
+                            <span class="font-mono text-amber-500">~1200–1100 BCE</span>
+                            <span>Hundreds of new small villages appear in the Canaanite highlands — four-room houses, no pig bones, matching biblical cultural markers.</span>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="font-mono text-amber-500">Compressed view</span>
+                            <span>Exactly when a compressed Exodus/Conquest would place Israelite emergence during the power vacuum.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compressed Timeline -->
+    <section id="timeline" class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="heading-font text-5xl font-bold text-center mb-16">The Compressed Timeline</h2>
+            
+            <div class="max-w-2xl mx-auto space-y-12">
+                <div class="flex gap-8">
+                    <div class="w-28 text-right font-medium text-stone-500">~1500–1300 BCE</div>
+                    <div>
+                        <div class="font-bold">Noah / Regional Flood Memory</div>
+                        <div class="text-sm text-stone-600">Local Mesopotamian disaster preserved in oral tradition</div>
+                    </div>
+                </div>
+                <div class="flex gap-8">
+                    <div class="w-28 text-right font-medium text-stone-500">~1300–1250 BCE</div>
+                    <div>
+                        <div class="font-bold">Patriarchs &amp; Exodus</div>
+                        <div class="text-sm text-stone-600">Small-scale nomadic groups, escape from Egypt during regional instability</div>
+                    </div>
+                </div>
+                <div class="flex gap-8">
+                    <div class="w-28 text-right font-medium text-stone-500">~1250–1150 BCE</div>
+                    <div>
+                        <div class="font-bold">Conquest &amp; Settlement</div>
+                        <div class="text-sm text-stone-600">Highland villages emerge during Late Bronze collapse chaos</div>
+                    </div>
+                </div>
+                <div class="flex gap-8">
+                    <div class="w-28 text-right font-medium text-stone-500">~1000 BCE</div>
+                    <div>
+                        <div class="font-bold">David &amp; Solomon</div>
+                        <div class="text-sm text-stone-600">Emerging united monarchy — matches recent archaeological finds</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why It Matters -->
+    <section class="py-24 bg-gradient-to-b from-white to-amber-50">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="heading-font text-5xl font-bold mb-8">Why This Matters</h2>
+            <div class="prose prose-lg mx-auto text-stone-600">
+                <p>The Echo Compression Theory doesn’t disprove the Bible — it restores its humanity.</p>
+                <p>It turns impossible superheroes into real elders whose stories were passed down through changing calendars and growing prestige. It makes the Flood a powerful regional memory, the Conquest part of a documented historical collapse, and the entire early narrative recent enough to feel like living tribal history rather than distant myth.</p>
+                <p>No time machine required. Just careful listening to how ancient people actually counted time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-950 text-stone-400 py-16">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <div class="flex justify-center items-center gap-3 mb-6">
+                <i class="fa-solid fa-hourglass-half text-4xl text-amber-400"></i>
+                <span class="text-3xl font-bold text-white tracking-widest heading-font">ECHO COMPRESSION</span>
+            </div>
+            <p class="text-xs uppercase tracking-widest">A human-scale reinterpretation of ancient time</p>
+            <p class="text-[10px] mt-12 opacity-50">Inspired by curious conversations • Built as a thought experiment</p>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script already loaded via CDN
+        // Progress bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+        });
+    </script>
+</body>
+</html>
